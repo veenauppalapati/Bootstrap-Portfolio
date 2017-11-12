@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Portfolio page</title>
+<title>Example of Bootstrap 3 Grid System</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,6 +17,12 @@
         background-repeat: no-repeat;
     }
 
+    p
+    {
+        float: left;
+        color: grey;
+        font-family: cursive;
+    }
 
 #container2
 {
@@ -56,7 +62,7 @@
    #aboutmesection
    {
     background: #FFE4E1;
-    min-height: 615px;
+    min-height: 570px;
     margin: 20px 0;
     padding: 20px;
     box-sizing: border-box;
@@ -99,13 +105,12 @@
 
   #iconbar
   {
-    background: #FFE4E1;
+    background:#FFE4E1;
     top:20px;
-    width: 100%;
 
   }
 
-   #navbar
+  #navbar
   {
     background: white;
     font-size: 12px;
@@ -114,44 +119,7 @@
     margin-right: 10px;
   }
 
-  #box1,#box2,#box3,#box4,#box5
-  {
-    background: orange;
-    min-height: 150px;
-    margin:18px;
-  }
-   #box2
-   {
-    background: green;
-   }
-
-   #box3
-   {
-    background: red;
-   }
-
-   #box4
-   {
-    background: yellow;
-   }
-
-   #box5
-   {
-    background: cyan;
-   }
-
-   #Titlebar1, #Titlebar3,#Titlebar2, #Titlebar4, #Titlebar5
-   {
-    background: black;
-    min-height: 30px;
-    top:90px;
-    color:silver;
-    text-align: center;
-    line-height: 30px;
-    font-size:10px;
-   }
-
-   #aboutmeTitlebox
+    #aboutmeTitlebox
    {
     border-bottom:3px solid silver;
     background: #FFE4E1;
@@ -162,9 +130,109 @@
    #githubicon, #Linkedinicon, #Stackoverflowicon
    {
       margin-left: 20px;
+    }
 
-   }
 
+  #Submitbox{
+  width: 50%;
+  height: 30px;
+  background-color: blue;
+
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  box-sizing: border-box;
+  margin-top: 35px;
+  margin-right: 0 auto;
+  margin-left: 0 auto;
+
+}
+
+
+
+
+#textbox1container {
+
+  width: 100%;
+  height: 80px;
+ background:  #FFE4E1;
+  line-height: 40px;
+ margin-top: 50px;
+
+  
+ 
+}
+
+#textbox1
+
+ {
+  width: 100%;
+  height: 20px;
+
+  box-sizing: border-box;
+
+  
+  
+
+}
+
+#textbox2container {
+
+  width: 100%;
+  height: 80px;
+  background:  #FFE4E1;
+  line-height: 40px;
+  
+
+}
+
+#textbox2
+
+ {
+  width: 100%;
+  height: 20px;
+ 
+  margin-left: auto;
+  box-sizing: border-box;
+  
+
+}
+
+#textbox3container {
+
+  width: 100%;
+  height: 80px;
+  background:  #FFE4E1;
+  line-height: 40px;
+
+ 
+  
+  
+}
+
+#textbox3
+
+ {
+  width: 100%;
+  height: 120px;
+  
+  padding-bottom: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  background:  white;
+  
+
+}
+
+#Aboutmebody
+{
+  background: #FFE4E1;
+  top:100px;
+}
+
+
+    
 
 </style>
 </head>
@@ -199,54 +267,47 @@
 
             <div class="col-md-5 col-md-push-2" id="aboutmesection">
 
-
                <div class="col-md-12" id="aboutmeTitlebox">
                     <h4>
-                    About me
+                    Contact
                     </h4>
                 </div>
 
-              <div class="col-md-5" id="box1">
+                <div id="Aboutmebody">
 
-                 <div class="col-md-12" id="Titlebar1">
-                   Hangman
-                 </div>
-                
+            
+
+              
+            <div id="textbox1container">
+              Full Name
+              <input class="col-md-12" id = "textbox1" placeholder="Full Name"></input>
               </div>
-
-              <div class="col-md-5" id="box2">
-                
-                <div class="col-md-12" id="Titlebar2">
-                   RPG Game
-                 </div>
-
-              </div>
-              <div class="col-md-5" id="box3">
-                
-                <div class="col-md-12" id="Titlebar3">
-                   Trivia Game
-                 </div>
-
-              </div>
-              <div class="col-md-5" id="box4">
-                
-                 <div class="col-md-12" id="Titlebar4">
-                   Rutgers Info Widget 
-                 </div>
-
-              </div>      
-
-              <div class="col-md-5" id="box5">
-                
-                 <div class="col-md-12" id="Titlebar5">
-                   Rock Papaer Scissors
-                 </div>
-
-              </div>
-                       
             </div>
+           
+
+
+             <div id = "textbox2container">
+             Email Address
+              <input class="col-md-12" id = "textbox2" placeholder="Full Name"></input>
+              </div>
+              
+            <div id="textbox3container">
+              Message
+              <input class="col-md-12" id = "textbox3" placeholder="Full Name"></input>
+              </div>
+
+
+            <button class="Submitbox" id="Submitbox">Submit</button>
+
+            </div>
+        
+        
+
+
+           
        
-             
+        
+        <!-- =========================================================================================================================================================-->     
 
             <div class="col-md-3 col-md-push-2" id="connectwithmesection">
 
@@ -264,7 +325,8 @@
                         </div>
 
             </div>
-
+        
+        <!-- =========================================================================================================================================================-->
 
             <div class="col-md-12" id="footer">
 
